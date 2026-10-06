@@ -1,0 +1,3 @@
+#!/bin/sh
+# Install Maven 3.9+ locally and run: mvn clean package
+exec mvn "$@"
