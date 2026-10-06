@@ -1,5 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api'
-
+const API_URL = import.meta.env.VITE_API_URL || 'https://student-election-voting-system-1.onrender.com/api'
 async function request(path, options = {}) {
   const response = await fetch(`${API_URL}${path}`, {
     headers: {
