@@ -30,6 +30,11 @@ export const api = {
       method: 'POST',
       body: JSON.stringify(payload)
     }),
+  register: (payload) =>
+    request('/auth/register', {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    }),
 
   getElections: () => request('/elections'),
 
